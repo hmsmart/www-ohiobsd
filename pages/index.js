@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import { Typography } from "@mui/material";
+import MainPage from "./mainPage";
 
 export default function Home() {
   return (
@@ -13,13 +14,11 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <Typography variant="h1">OhioBSD.cloud</Typography>
-        <Typography variant="h2">17th Street's #1 BSD VPS Provider</Typography>
-
-        <p className={styles.description}>
-          <code className={styles.code}>sup wit it gamers</code>
-        </p>
+        <h1>OhioBSD.cloud</h1>
+        <h2>17th Streets #1 BSD VPS Provider</h2>
       </main>
+
+      <MainPage />
 
       <footer className={styles.footer}>
         <a
