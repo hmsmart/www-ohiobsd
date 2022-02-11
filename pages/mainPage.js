@@ -1,5 +1,7 @@
+import styles from "../styles/Home.module.css";
+
 const mainPage = () => {
-  return <div>sometimes it do be like that</div>;
+  return <div className={styles.scrollContainer}></div>;
 };
 
 export default mainPage;
