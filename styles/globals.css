@@ -4,6 +4,15 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'spleenmedium';
+}
+
+@font-face {
+  font-family: 'spleenmedium';
+  src: url('spleenmedium-webfont.woff2') format('woff2'),
+       url('spleenmedium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 a {

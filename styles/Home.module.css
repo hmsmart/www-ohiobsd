@@ -1,20 +1,138 @@
-.container {
-  padding: 0 2rem;
+/* index.js */
+
+#navbar{
+  background-color: rgb(33, 32, 32); 
+  display: flex;
+  width: 100%;
+  height: 75px;
+  color: white;
 }
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
+#BSDLogoText{
+  background-image: url("../public/LogoStuff/OhioBSDcloud.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 30px;
+  width: 300px;
+  height: 75px;
+  margin-top: 15px;
   display: flex;
-  flex-direction: column;
+  justify-content: flex-end;
+}
+
+#navigation{
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  margin-left: -50px;
+  color: red;
+  font-size: 1.4rem;
+  align-items: flex-end;
+}
+
+.navbarText{
+  padding-left: 30px;
+}
+
+.navbarText:hover{
+  color:white;
+  font-style: italic;
+}
+
+#main {
+  background-color: rgb(33, 32, 32);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: center;
+  padding: 4rem 4rem;
+}
+
+#BSDLogoFlag{
+  background-image: url("../public/LogoStuff/OhioBSDforSite.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+}
+
+#titleContainer{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+}
+
+#title{
+  padding: 2rem 0rem;
+  font-size: 2.5rem;
+  color: white;
+  width: 80%;
+  text-align: center;
+}
+
+.descriptionContainer{
+  border-top: 0.5px solid rgb(82, 79, 79);
+  display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%; 
+  height: 400px;
+  padding: 2rem 0rem;
 }
+
+.textDescription{
+  text-align: center;
+  width: 50%;
+  font-size: 1.5rem;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+#pictureBox1{
+  background-image: url("../public/ServerPics/serverpic1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 280px;
+}
+
+#pictureBox2{
+  background-image: url("../public/ServerPics/serverpic2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 280px;
+}
+
+#pictureBox3{
+  background-image: url("../public/ServerPics/serverpic3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 280px;
+}
+
+
+
+@font-face {
+  font-family: 'umbraregular';
+  src: url('./unicode.umbra-webfont.woff2') format('woff2'),
+       url('./unicode.umbra-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 .footer {
   display: flex;
   flex: 1;
+  background-color: rgb(33, 32, 32);
+  color: white;
   padding: 2rem 0;
   border-top: 1px solid #eaeaea;
   justify-content: center;
@@ -37,14 +155,6 @@
     Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-}
-
 .logo {
   height: 1em;
   margin-left: 0.5rem;
@@ -55,4 +165,11 @@
     width: 100%;
     flex-direction: column;
   }
+}
+
+/* mainPage.js */
+
+.scrollContainer{
+  height: 10px;
+  background-color: pink;
 }
