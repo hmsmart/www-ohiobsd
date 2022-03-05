@@ -22,6 +22,10 @@
   justify-content: flex-end;
 }
 
+#BSDLogoText:hover {
+  cursor: pointer;
+}
+
 #navigation{
   list-style-type: none;
   display: flex;
@@ -39,6 +43,7 @@
 .navbarText:hover{
   color:white;
   font-style: italic;
+  cursor: pointer;
 }
 
 #main {
