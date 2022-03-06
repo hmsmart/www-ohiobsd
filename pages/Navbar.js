@@ -4,17 +4,17 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <div id={styles.navbar}>
-      <Link href="/">
+      <Link href="/" passHref>
         <div id={styles.BSDLogoText}></div>
       </Link>
       <ul id={styles.navigation}>
-        <Link href="whyBSD">
+        <Link href="whyBSD" passHref>
           <li className={styles.navbarText}> Why BSD?</li>
         </Link>
-        <Link href="buyBSD">
+        <Link href="buyBSD" passHref>
           <li className={styles.navbarText}> Buy BSD.</li>
         </Link>
-        <Link href="contactUs">
+        <Link href="contactUs" passHref>
           <li className={styles.navbarText}> Contact Us!</li>
         </Link>
       </ul>

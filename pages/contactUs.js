@@ -5,7 +5,7 @@ const contactUs = () => {
   return (
     <div className={styles.scrollContainer}>
       <Navbar />
-      <div id={styles.pageTitle}>Send it -----></div>
+      <div id={styles.pageTitle}>Send it -----&gt;</div>
       <div className={styles.container}>
         <form className={styles.formContainer}>
           <div className={styles.inputs}>

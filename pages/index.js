@@ -34,7 +34,7 @@ export default function Home() {
 
           <div className={styles.descriptionContainer}>
             <div className={styles.textDescription}>
-              Once you've had a taste of greatness, you'll never use anything
+              Once you&apos;ve had a taste of greatness, you&apos;ll never use anything
               else.
             </div>
             <div className={styles.pictureBox} id={styles.pictureBox3}></div>

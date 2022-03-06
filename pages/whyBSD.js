@@ -11,7 +11,7 @@ const WhyBSD = () => {
         Unix based OS. It offers all the speed of linux systems while not being
         updated by an army of giga nerds every 5 seconds and for every iteration
         of idea that goes through those nerds heads. <br></br> <br></br>
-        BSD is known for it's dependability, security, and speed. OhioBSD has
+        BSD is known for it&apos;s dependability, security, and speed. OhioBSD has
         both freeBSD and openBSD available for use.
         <br></br>
         <br></br>
