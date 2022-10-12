@@ -6,14 +6,20 @@ const contactUs = () => {
   async function submitForm(e) {
     e.preventDefault();
     const form = e.target;
+    // const postReq = {
+    //   name: form.name.value,
+    //   email: form.email.value,
+    //   phone: form.phone.value,
+    //   message: form.message.value,
+    // }
     const postReq = {
-      name: form.name.value,
-      email: form.email.value,
-      phone: form.phone.value,
-      message: form.message.value,
+      fact: "He's like the main dude in Ozark."
     }
     try {
-      const data = await fetch("https://www.jsonbateman.com/facts", {
+      // const data = await fetch("https://www.jsonbateman.com")
+      // const jsonData = await data.json();
+
+      const data = await fetch("https://www.jsonbateman.com", {
         method: "POST",
         headers: {
           'Content-Type': 'application/json',
@@ -21,6 +27,7 @@ const contactUs = () => {
         body: JSON.stringify(postReq)
       })
       const jsonData = await data.json()
+      
       console.log(jsonData)
     } catch (err) {
       console.log(err)
@@ -43,14 +50,12 @@ const contactUs = () => {
               type="text"
               name="name"
               placeholder="Full name"
-              required
             />
             <span className={styles.formSubtitles}>Email</span>
             <input
               className={styles.inputForm}
-              type="email"
+              type="makethisemail"
               name="email"
-              required
               placeholder="Email"
             />
             <span className={styles.formSubtitles}>Phone Number</span>
@@ -58,7 +63,6 @@ const contactUs = () => {
               className={styles.inputForm}
               type="phone"
               name="phone"
-              required
               placeholder="Phone number"
               />
           </div>
@@ -66,7 +70,6 @@ const contactUs = () => {
           <div id={styles.message}>
             <textarea 
               name="message"
-              required
             />
           </div>
           <button type="submit" href="/">
