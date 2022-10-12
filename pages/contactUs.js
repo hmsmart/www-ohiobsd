@@ -2,12 +2,40 @@ import Navbar from "./Navbar";
 import styles from "../styles/Home.module.css";
 
 const contactUs = () => {
+  
+  async function submitForm(e) {
+    e.preventDefault();
+    const form = e.target;
+    const postReq = {
+      name: form.name.value,
+      email: form.email.value,
+      phone: form.phone.value,
+      message: form.message.value,
+    }
+    try {
+      const data = await fetch("https://www.jsonbateman.com/facts", {
+        method: "POST",
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(postReq)
+      })
+      const jsonData = await data.json()
+      console.log(jsonData)
+    } catch (err) {
+      console.log(err)
+    }
+
+  }
   return (
     <div className={styles.scrollContainer}>
       <Navbar />
       <div id={styles.pageTitle}>Send it -----&gt;</div>
       <div className={styles.container}>
-        <form className={styles.formContainer}>
+        <form 
+          onSubmit={(e) => submitForm(e)}
+          method="POST"
+          className={styles.formContainer}>
           <div className={styles.inputs}>
             <span className={styles.formSubtitles}>Name</span>
             <input
@@ -15,25 +43,31 @@ const contactUs = () => {
               type="text"
               name="name"
               placeholder="Full name"
-            ></input>
+              required
+            />
             <span className={styles.formSubtitles}>Email</span>
             <input
               className={styles.inputForm}
-              type="text"
-              name="name"
+              type="email"
+              name="email"
+              required
               placeholder="Email"
-            ></input>
+            />
             <span className={styles.formSubtitles}>Phone Number</span>
             <input
               className={styles.inputForm}
-              type="text"
-              name="name"
+              type="phone"
+              name="phone"
+              required
               placeholder="Phone number"
-            ></input>
+              />
           </div>
           <span className={styles.formSubtitles}>Message</span>
           <div id={styles.message}>
-            <textarea rows="8" cols="33"></textarea>
+            <textarea 
+              name="message"
+              required
+            />
           </div>
           <button type="submit" href="/">
             Submit

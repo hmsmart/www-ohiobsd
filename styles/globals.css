@@ -28,3 +28,11 @@ a {
 * {
   box-sizing: border-box;
 }
+
+textarea { 
+	resize: none;
+}
+
+input {
+  padding-left: 10px;
+}
