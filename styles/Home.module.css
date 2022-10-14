@@ -28,7 +28,7 @@
 }
 
 .navbarText{
-  padding-left: 40px;
+  padding-left: 30px;
   font-size: 1.4rem;
 }
 
@@ -128,8 +128,19 @@
 
 @media (max-width: 560px) {
 
+  #navbar {
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+  }
+
   #main {
     padding: 4rem 4rem;
+  }
+
+  .navbarText{
+    padding-left: 20px;
+    font-size: 1.2rem;
   }
 
   #BSDLogoText {
@@ -139,6 +150,7 @@
   .descriptionContainer{
     display: flex;
     flex-direction: column-reverse;
+    padding: 0;
   }
 
   .textDescription {
