@@ -12,7 +12,9 @@ const Wrapper = ({ children }) => {
       </Head>
 
       <Navbar />
+      
       {children}
+
       <div className={styles.footer}>
         <a>Powered by the grid on 17th street 🏠</a>
       </div>
