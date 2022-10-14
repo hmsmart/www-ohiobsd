@@ -9,6 +9,7 @@ const Navbar = () => {
       <Link href="/" passHref>
         <Image
           className="hover:cursor-pointer"
+          alt="OhioBSD.cloud logo text"
           src={OhioBSDcloud}
           width={280}
           height={60}

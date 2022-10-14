@@ -19,6 +19,7 @@ export default function Home() {
               OhioBSD covers all of your server needs, from DNS to hosting to storage. 
             </div>
             <Image
+              alt="server rack"
               src={server}
               width={200}
               height={300}
@@ -27,6 +28,7 @@ export default function Home() {
 
           <div className={styles.descriptionContainer}>
             <Image
+              alt="freeBSD logo"
               src={bsdLogo}
               width={200}
               height={200}
@@ -41,6 +43,7 @@ export default function Home() {
               Code comfortably knowing BSD has a history of providing secure services for users.
             </div>
             <Image
+              alt="encryption lock"
               src={encrypted}
               width={250}
               height={300}
