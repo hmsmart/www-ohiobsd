@@ -5,20 +5,18 @@ const contactUs = () => {
   async function submitForm(e) {
     e.preventDefault();
     const form = e.target;
-    // const postReq = {
-    //   name: form.name.value,
-    //   email: form.email.value,
-    //   phone: form.phone.value,
-    //   message: form.message.value,
-    // }
     const postReq = {
-      fact: "He's like the main dude in Ozark."
+      name: form.name.value,
+      email: form.email.value,
+      phone: form.phone.value,
+      message: form.message.value,
     }
+
     try {
       // const data = await fetch("https://www.jsonbateman.com")
       // const jsonData = await data.json();
 
-      const data = await fetch("https://www.jsonbateman.com", {
+      const data = await fetch("https://www.jsonbateman.com/contact", {
         method: "POST",
         headers: {
           'Content-Type': 'application/json',
