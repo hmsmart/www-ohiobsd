@@ -1,4 +1,3 @@
-import Navbar from "./Navbar";
 import styles from "../styles/Home.module.css";
 
 const contactUs = () => {
@@ -36,8 +35,10 @@ const contactUs = () => {
   }
   return (
     <div className={styles.scrollContainer}>
-      <Navbar />
-      <div id={styles.pageTitle}>Send it -----&gt;</div>
+      <div id={styles.pageTitle}>Contact Us</div>
+      <div id={styles.pageParagraph}>
+        Fill out the form below to contact Ohio BSD and someone will get back to you.
+      </div>
       <div className={styles.container}>
         <form 
           onSubmit={(e) => submitForm(e)}
@@ -69,16 +70,14 @@ const contactUs = () => {
           <span className={styles.formSubtitles}>Message</span>
           <div id={styles.message}>
             <textarea 
+              className="pl-2"
               name="message"
             />
           </div>
-          <button type="submit" href="/">
+          <button className="border rounded border-white bg-red-700 hover:bg-red-500 text-white" type="submit" href="/">
             Submit
           </button>
         </form>
-      </div>
-      <div className={styles.footer}>
-        <a>Powered by the grid on 17th street 🏠</a>
       </div>
     </div>
   );

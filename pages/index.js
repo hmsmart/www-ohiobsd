@@ -1,48 +1,52 @@
 import Head from "next/head";
+import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import Navbar from "./Navbar";
+import server from "../public/server.png"
+import bsdLogo from "../public/LogoStuff/bitmap.svg"
+import encrypted from "../public/encrypted-icon-green.svg"
 
 export default function Home() {
   return (
     <div>
-      <Head>
-        <title>Ohio BSD</title>
-        <meta name="description" content="Cuyahoga Falls only BSD center" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <header>
-        <Navbar />
         <main id={styles.main}>
           <div id={styles.titleContainer}>
             <div id={styles.BSDLogoFlag}></div>
           </div>
           <div id={styles.title}>Serving servers since 2022.</div>
           <div className={styles.descriptionContainer}>
-            <div className={styles.textDescription}>
-              Take a look at some of the finest server engineering that money
-              can buy.
+            <div className={`mx-8 ${styles.textDescription}`}>
+              OhioBSD covers all of your server needs, from DNS to hosting to storage. 
             </div>
-            <div className={styles.pictureBox} id={styles.pictureBox1}></div>
+            <Image
+              src={server}
+              width={200}
+              height={300}
+            />
           </div>
 
           <div className={styles.descriptionContainer}>
-            <div className={styles.pictureBox} id={styles.pictureBox2}></div>
-            <div className={styles.textDescription}>
-              This is what peak performance looks like.
+            <Image
+              src={bsdLogo}
+              width={200}
+              height={200}
+            />
+            <div className={`mx-8 ${styles.textDescription}`}>
+              At OhioBSD, our servers run and deliver the Berkeley Software Distribution Operating System.
             </div>
           </div>
 
           <div className={styles.descriptionContainer}>
-            <div className={styles.textDescription}>
-              Once you&apos;ve had a taste of greatness, you&apos;ll never use anything
-              else.
+            <div className={`mx-8 ${styles.textDescription}`}>
+              Code comfortably knowing BSD has a history of providing secure services for users.
             </div>
-            <div className={styles.pictureBox} id={styles.pictureBox3}></div>
+            <Image
+              src={encrypted}
+              width={250}
+              height={300}
+            />
           </div>
         </main>
-        <div className={styles.footer}>
-          <a>Powered by the grid on 17th street 🏠</a>
-        </div>
       </header>
     </div>
   );
