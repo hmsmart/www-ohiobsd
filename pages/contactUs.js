@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "../styles/Home.module.css";
 
-const contactUs = () => {
+const ContactUs = () => {
   const [success, setSuccess] = useState(false);
 
   async function submitForm(e) {
@@ -97,4 +97,4 @@ const contactUs = () => {
   );
 };
 
-export default contactUs;
+export default ContactUs;
