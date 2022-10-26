@@ -219,8 +219,13 @@
 
 .formContainer button {
   margin-top: 10px;
-  width: 100px;
   height: 35px;
+}
+
+.successBtn {
+  margin-top: 10px;
+  height: 35px;
+  padding-top: 4px;
 }
 
 .formSubtitles {
