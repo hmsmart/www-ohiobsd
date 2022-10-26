@@ -4,8 +4,9 @@
   "license": "BSD-2-CLAUSE",
   "scripts": {
     "dev": "next dev",
+    "dev:static": "serve ./out",
     "build": "next build && next export",
-    "start": "next start",
+    "start": "next start -p 4000",
     "lint": "next lint"
   },
   "dependencies": {
