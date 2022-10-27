@@ -8,11 +8,11 @@ const Wrapper = ({ children }) => {
       <Head>
         <title>Ohio BSD</title>
         <meta name="description" content="Cuyahoga Falls only BSD center" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="/favicon.png" />
       </Head>
 
       <Navbar />
-      
+
       {children}
 
       <div className={styles.footer}>

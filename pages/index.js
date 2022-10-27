@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import server from "../public/server.png"
@@ -16,7 +15,7 @@ export default function Home() {
           <div id={styles.title}>Serving servers since 2022.</div>
           <div className={styles.descriptionContainer}>
             <div className={`mx-8 ${styles.textDescription}`}>
-              OhioBSD covers all of your server needs, from DNS to hosting to storage. 
+              OhioBSD covers all of your server needs, from DNS to hosting to storage.
             </div>
             <Image
               alt="server rack"
